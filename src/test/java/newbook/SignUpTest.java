@@ -30,7 +30,21 @@ public class SignUpTest extends BaseTest {
        Assert.assertEquals("Required", error1);
        log.info("Compare error message for FirstName field");
 
-    }
+       String error2 = signUpPage.errorLastNameField();
+       Assert.assertEquals("Required", error2);
+       log.info("Compare error message for LastName field");
 
+       String error3 = signUpPage.errorEmailField();
+       Assert.assertEquals("Required", error3);
+       log.info("Compare error message for EmailField");
+
+       String error4 = signUpPage.errorPasswordField();
+       Assert.assertEquals("Invalid password format", error4);
+       log.info("Compare error message for PasswordField");
+
+       String error5 = signUpPage.errorMobileField();
+       Assert.assertEquals("Invalid phone format", error5);
+       log.info("Compare error message for MobileField");
+    }
 
 }
