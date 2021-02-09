@@ -20,7 +20,7 @@ public class BaseTest {
     @BeforeClass
     public static void testBase() {
 //        log
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\andri\\Desktop\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\test\\java\\chromedriver1.exe");
 
         driver = new ChromeDriver();
 

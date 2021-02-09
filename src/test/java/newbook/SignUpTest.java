@@ -13,7 +13,7 @@ public class SignUpTest extends BaseTest {
     @Test
     public void testSignUp() {
 
-        log.info("Starting test SignUp....");
+       log.info("Starting test SignUp....");
 
        homePage = new HomePage(driver);
        log.info("HomePage is opened");
