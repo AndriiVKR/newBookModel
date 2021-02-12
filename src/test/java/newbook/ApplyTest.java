@@ -24,6 +24,16 @@ public class ApplyTest extends BaseTest {
         ClientSingUpPage clientSingUpPage = new ClientSingUpPage(driver);
         clientSingUpPage.inputFirstNameField("Name");
 
+        clientSingUpPage.inputLastNameField("Last");
+
+        clientSingUpPage.inputEmailField("email@email.com");
+
+        clientSingUpPage.inputPasswordField("password");
+
+        clientSingUpPage.inputPasswordConfirmField("password");
+
+        clientSingUpPage.inputPhoneNumberField("5555555");
+
 
 
 
